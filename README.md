@@ -1,27 +1,86 @@
-# Maps
+# Angular App Maps
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
+* App using Angular 7, Angular Google Maps (AGM) and IPAPI.co to plot the user's location.
 
-## Development server
+*** Note: to open web links in a new window use: _ctrl+click on link_**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Table of contents
 
-## Code scaffolding
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Status](#status)
+* [Inspiration](#inspiration)
+* [Contact](#contact)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## General info
 
-## Build
+* Angular httpClient used to get API data.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Screenshots
 
-## Running unit tests
+![Example screenshot](./img/location.png).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies
 
-## Running end-to-end tests
+* [Angular v7.2.14](https://angular.io/) & [Angular CLI v7.3.8](https://cli.angular.io/).
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* [RxJS Library v6.5.1](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html).
 
-## Further help
+## Setup
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app does not automatically reload if you change any of the source files.
+
+## Code Examples
+
+* `maps.service.ts` using httpClient to get map location details from the API.
+
+```typescript
+
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+
+interface Location {
+  latitude: string;
+  longitude: string;
+  country_name: string;
+  city: string;
+}
+@Injectable({
+  providedIn: "root"
+})
+export class MapsService {
+  constructor(private http: HttpClient) {}
+
+  getLocation() {
+    return this.http.get<Location>("https://ipapi.co/178.139.88.229/json/");
+  }
+}
+
+```
+
+## Features
+
+* Google Maps (AGM - Angular Google Maps) and IPAPI.co to plot the user's location
+
+* Angular httpClient used to get data from an external API.
+
+* IPAPI.co used
+
+* Updated to latest Angular 7 version with all dependency conflicts resolved.
+
+## Status & To-Do List
+
+* Status: Simple working app that gets API data of user location and displays it.
+
+* To-Do: add functionality  - present data using Angular form cards and add commenting
+
+## Inspiration
+
+* [Coursetro Youtube video: Angular 7 Google Maps Tutorial with IPAPI (Plotting a User's Location)](https://www.youtube.com/watch?v=-IwTQgKIjCQ)
+
+## Contact
+
+Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!

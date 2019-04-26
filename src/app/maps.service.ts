@@ -17,3 +17,4 @@ export class MapsService {
     return this.http.get<Location>("https://ipapi.co/178.139.88.229/json/");
   }
 }
+	
