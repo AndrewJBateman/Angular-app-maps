@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
 
+const apiKey = 'AIzaSyDKuOFIBvtbja-IPXGGpQvLakD-rJhnFWw';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -13,7 +15,7 @@ import { AgmCoreModule } from '@agm/core';
     BrowserModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDKuOFIBvtbja-IPXGGpQvLakD-rJhnFWw'
+      apiKey: apiKey
     })
   ],
   providers: [],

@@ -1,6 +1,9 @@
-<h2>Your city: {{ city }}</h2>
 <h1>Your country: {{ country }}</h1>
+<h2>Your city is: {{ city }}, with calling code: {{ calling_code }}</h2>
+<p>Your coordinates are: latitude: {{ lat }}, longitude: {{ lng }}</p>
 
+<div class="pinboard">
 <agm-map [latitude]="lat" [longitude]="lng">
   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
+</div>
