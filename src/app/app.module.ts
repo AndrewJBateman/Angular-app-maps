@@ -1,3 +1,4 @@
+/* import modules so that AppModule can access them */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -21,4 +22,4 @@ const apiKey = 'AIzaSyDKuOFIBvtbja-IPXGGpQvLakD-rJhnFWw';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

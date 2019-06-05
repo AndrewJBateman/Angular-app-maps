@@ -12,7 +12,7 @@ interface Location {
 @Injectable({
   providedIn: 'root'
 })
-  
+
 export class MapsService {
   constructor(private http: HttpClient) {}
 

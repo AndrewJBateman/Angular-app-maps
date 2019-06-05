@@ -1,6 +1,6 @@
 # Angular App Maps
 
-* App using Angular 7, Angular Google Maps (AGM) and IPAPI.co to plot the user's location.
+* App using Angular 8, Angular Google Maps (AGM) and IPAPI.co to plot the user's location.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -25,9 +25,11 @@
 
 ## Technologies
 
-* [Angular v7.2.14](https://angular.io/) & [Angular CLI v7.3.8](https://cli.angular.io/).
+* [Angular v8.0.0](https://angular.io/)
 
-* [RxJS Library v6.5.1](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html).
+* [Angular CLI v8.0.1](https://cli.angular.io/).
+
+* [RxJS Library v6.5.2](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html).
 
 * [ipapi](https://ipapi.co/) API to get IP address. The API can also get city, region , country , continent, postal code, latitude, longitude, timezone, utc_offset, european union (EU) membership, country calling code, currency, languages spoken, asn and organization. Free service but location given is highly inaccurate.
 
@@ -72,19 +74,19 @@ export class MapsService {
 
 ## Features
 
-*  IPAPI API used to get ip and location data etc. in json format.
+* IPAPI API used to get ip and location data etc. in json format.
 
 * Angular Google Maps used to show location on a map using the lat and longitude from IPAPI API.
 
 * Angular httpClient used to get data from an IPAPI API.
 
-* Updated to latest Angular 7 version with all dependency conflicts resolved.
+* Updated to latest Angular 8 version with all dependency conflicts resolved.
 
 ## Status & To-Do List
 
-* Status: Simple working app that gets API data of user location and displays it.
+* Status: Working. app.module.ts has error '.../@angular/platform-browser has no exported member' but unable to fix. App still works.
 
-* To-Do: add functionality  - present data using Angular form cards and add commenting
+* To-Do: add functionality  - present data using Angular form cards and add commenting. Fix above error.
 
 ## Inspiration
 
@@ -94,4 +96,4 @@ export class MapsService {
 
 ## Contact
 
-Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
