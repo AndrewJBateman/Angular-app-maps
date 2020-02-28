@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
 
-const apiKey = 'AIzaSyDKuOFIBvtbja-IPXGGpQvLakD-rJhnFWw';
+// Paste your Google Maps API key here
+const apiKey = '';
 
 @NgModule({
   declarations: [
