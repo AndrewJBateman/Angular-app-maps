@@ -1,25 +1,25 @@
-import { Component } from '@angular/core';
-import { MapsService } from './maps.service';
+import { Component } from "@angular/core";
+import { MapsService } from "./maps.service";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  lat = '';
-  lng = '';
-  country = '';
-  calling_code = '';
-  city = '';
+  lat = "";
+  lng = "";
+  country = "";
+  calling_code = "";
+  city = "";
   ip = 0;
   location: Object;
 
   constructor(private map: MapsService) {}
 
-// tslint:disable-next-line: use-life-cycle-interface
+  // tslint:disable-next-line: use-life-cycle-interface
   ngOnInit() {
-    this.map.getLocation().subscribe(data => {
+    this.map.getLocation().subscribe((data) => {
       console.log(data);
       this.lat = data.latitude;
       this.lng = data.longitude;

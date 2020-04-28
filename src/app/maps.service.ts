@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
 
 interface Location {
   latitude: string;
@@ -10,13 +10,12 @@ interface Location {
   ip: 0;
 }
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
-
 export class MapsService {
   constructor(private http: HttpClient) {}
 
   getLocation() {
-    return this.http.get<Location>('https://ipapi.co/json/');
+    return this.http.get<Location>("https://ipapi.co/json/");
   }
 }
