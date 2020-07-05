@@ -7,11 +7,11 @@
 ## :page_facing_up: Table of contents
 
 * [:zap: Angular App Maps](#zap-angular-app-maps)
-  * [:page_facing_up: Table of contents](#pagefacingup-table-of-contents)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
-  * [:signal_strength: Technologies](#signalstrength-technologies)
-  * [:floppy_disk: Setup](#floppydisk-setup)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
   * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
@@ -63,7 +63,7 @@ interface Location {
 @Injectable({
   providedIn: 'root'
 })
-  
+
 export class MapsService {
   constructor(private http: HttpClient) {}
 
@@ -81,7 +81,7 @@ export class MapsService {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working. All dependencies updated
+* Status: Working. All dependencies updated. @agm/core dep removed
 * To-Do: add functionality  - present data using Angular form cards and add commenting.
 
 ## :clap: Inspiration
