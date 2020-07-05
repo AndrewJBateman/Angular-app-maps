@@ -1,6 +1,6 @@
 # :zap: Angular App Maps
 
-* App using Angular 9, Angular Google Maps (AGM) and IPAPI.co to plot the user's location on a map.
+* App using Angular 10, Angular Google Maps (AGM) and IPAPI.co to plot the user's location on a map.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -28,7 +28,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v9](https://angular.io/)
+* [Angular v10](https://angular.io/)
 * [RxJS Library v6](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html)
 * [Angular Google Maps (AGM) Core - Angular 2+ Google Maps components](https://www.npmjs.com/package/@agm/core)
 * [ipapi](https://ipapi.co/) API to get IP address. The API can also get city, region , country , continent, postal code, latitude, longitude, timezone, utc_offset, european union (EU) membership, country calling code, currency, languages spoken, asn and organization. Free service but location given is highly inaccurate
@@ -77,12 +77,12 @@ export class MapsService {
 
 * IPAPI API used to get ip and location data etc. in json format.
 * Angular Google Maps used to accurately show user location on a map using the lat and longitude from IPAPI API.
-* Updated to latest Angular 9 version with all dependency conflicts resolved.
+* Updated to latest Angular 10 version with all dependency conflicts resolved.
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working. All dependencies updated. @agm/core dep removed
-* To-Do: add functionality  - present data using Angular form cards and add commenting.
+* Status: Working. All dependencies updated.
+* To-Do: nothing
 
 ## :clap: Inspiration
 
