@@ -1,6 +1,6 @@
 # :zap: Angular App Maps
 
-* App using Angular 10, Angular Google Maps (AGM) and IPAPI.co to plot the user's location on a map.
+* App using Angular 11, Angular Google Maps (AGM) and IPAPI.co to plot the user's location on a map.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -28,12 +28,12 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v10](https://angular.io/)
+* [Angular v11](https://angular.io/)
 * [RxJS Library v6](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html)
 * [Angular Google Maps (AGM) Core - Angular 2+ Google Maps components](https://www.npmjs.com/package/@agm/core)
-* [ipapi](https://ipapi.co/) API to get IP address. The API can also get city, region , country , continent, postal code, latitude, longitude, timezone, utc_offset, european union (EU) membership, country calling code, currency, languages spoken, asn and organization. Free service but location given is highly inaccurate
+* [ipapi](https://ipapi.co/) API to get IP address. The API can also get city, region , country , continent, postal code, latitude, longitude, timezone, utc_offset, european union (EU) membership, country calling code, currency, languages spoken, asn and organization. Free service but location given is actually the location of my internet service provider.
 
-Http request format: GET `https://ipapi.co/{format}/`
+Http request with json format: GET `https://ipapi.co/json/`
 
 * [Angular Google Maps](https://angular-maps.com/) component
 
@@ -46,12 +46,9 @@ Http request format: GET `https://ipapi.co/{format}/`
 
 ## :computer: Code Examples
 
-* `maps.service.ts` using httpClient to get map location details from the API.
+* extract from `maps.service.ts` using httpClient to get map location details from the API.
 
 ```typescript
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
 interface Location {
   latitude: string;
   longitude: string;
@@ -77,11 +74,10 @@ export class MapsService {
 
 * IPAPI API used to get ip and location data etc. in json format.
 * Angular Google Maps used to accurately show user location on a map using the lat and longitude from IPAPI API.
-* Updated to latest Angular 10 version with all dependency conflicts resolved.
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working. All dependencies updated.
+* Status: Working.
 * To-Do: nothing
 
 ## :clap: Inspiration

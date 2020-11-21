@@ -15,7 +15,7 @@ const apiKey = "";
     BrowserModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: "",
+      apiKey: apiKey,
     }),
   ],
   providers: [],
