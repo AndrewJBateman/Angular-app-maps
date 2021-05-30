@@ -37,9 +37,7 @@
 * [RxJS Library v6](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html)
 * [Angular Google Maps (AGM) Core - Angular 2+ Google Maps components](https://www.npmjs.com/package/@agm/core)
 * [ipapi](https://ipapi.co/) API to get IP address. The API can also get city, region , country , continent, postal code, latitude, longitude, timezone, utc_offset, european union (EU) membership, country calling code, currency, languages spoken, asn and organization. Free service but location given is actually the location of my internet service provider.
-
-Http request with json format: GET `https://ipapi.co/json/`
-
+* Http request with json format: GET `https://ipapi.co/json/`
 * [Angular Google Maps](https://angular-maps.com/) component
 
 ## :floppy_disk: Setup
